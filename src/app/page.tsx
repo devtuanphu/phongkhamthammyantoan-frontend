@@ -35,7 +35,7 @@ export default async function HomePage() {
               {data?.heroSection?.subtitle || 'Tư vấn & thực hiện dịch vụ thẩm mỹ uy tín tại Số 10 Trần Điền, Hà Nội'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
-              <Link href={data?.heroSection?.ctaUrl || '/contact'} className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:-translate-y-1">
+              <Link href={data?.heroSection?.ctaUrl || '/lien-he'} className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:-translate-y-1">
                 {data?.heroSection?.ctaText || 'Đặt lịch tư vấn'}
               </Link>
               <a href="tel:0909888999" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all">
@@ -69,7 +69,7 @@ export default async function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.slice(0, 6).map((s) => (
-              <Link key={s.slug} href={`/services/${s.slug}`} className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <Link key={s.slug} href={`/dich-vu/${s.slug}`} className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
                 <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                   <span className="text-2xl">✨</span>
                 </div>
@@ -80,7 +80,7 @@ export default async function HomePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/services" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+            <Link href="/dich-vu" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
               Xem tất cả dịch vụ →
             </Link>
           </div>
@@ -152,7 +152,7 @@ export default async function HomePage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">{data.ctaSection.title}</h2>
               <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">{data.ctaSection.description}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href={data.ctaSection.buttonUrl || '/contact'} className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1">
+                <Link href={data.ctaSection.buttonUrl || '/lien-he'} className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1">
                   {data.ctaSection.buttonText}
                 </Link>
                 {data.ctaSection.phone && (

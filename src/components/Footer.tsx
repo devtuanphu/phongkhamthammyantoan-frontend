@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const footerLinks = [
-  { href: '/about', label: 'Về chúng tôi' },
-  { href: '/services', label: 'Dịch vụ' },
-  { href: '/news', label: 'Tin tức' },
-  { href: '/contact', label: 'Liên hệ' },
+  { href: '/ve-chung-toi', label: 'Về chúng tôi' },
+  { href: '/dich-vu', label: 'Dịch vụ' },
+  { href: '/tin-tuc', label: 'Tin tức' },
+  { href: '/lien-he', label: 'Liên hệ' },
 ];
 
 export default function Footer() {

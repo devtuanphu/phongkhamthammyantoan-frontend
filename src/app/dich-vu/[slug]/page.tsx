@@ -25,7 +25,7 @@ export default async function ServiceDetailPage({ params }: { params: { slug: st
     return (
       <div className="py-40 text-center">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Không tìm thấy dịch vụ</h1>
-        <Link href="/services" className="text-primary font-semibold">← Quay lại danh sách dịch vụ</Link>
+        <Link href="/dich-vu" className="text-primary font-semibold">← Quay lại danh sách dịch vụ</Link>
       </div>
     );
   }
@@ -35,7 +35,7 @@ export default async function ServiceDetailPage({ params }: { params: { slug: st
       {/* Banner */}
       <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/services" className="text-white/60 hover:text-white text-sm mb-4 inline-block">← Tất cả dịch vụ</Link>
+          <Link href="/dich-vu" className="text-white/60 hover:text-white text-sm mb-4 inline-block">← Tất cả dịch vụ</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{service.title}</h1>
           <p className="text-white/80 text-lg max-w-2xl">{service.description}</p>
           {service.priceFrom && <p className="mt-4 text-2xl font-bold">Từ {service.priceFrom}</p>}

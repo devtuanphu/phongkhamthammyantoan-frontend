@@ -96,7 +96,7 @@ export default async function AboutPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">{data.ctaSection.title}</h2>
             <p className="text-gray-600 text-lg mb-8">{data.ctaSection.description}</p>
-            <a href={data.ctaSection.buttonUrl || '/contact'} className="inline-flex bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-1">
+            <a href={data.ctaSection.buttonUrl || '/lien-he'} className="inline-flex bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-1">
               {data.ctaSection.buttonText}
             </a>
           </div>

@@ -24,7 +24,7 @@ export default async function NewsDetailPage({ params }: { params: { slug: strin
     return (
       <div className="py-40 text-center">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Không tìm thấy bài viết</h1>
-        <Link href="/news" className="text-primary font-semibold">← Quay lại tin tức</Link>
+        <Link href="/tin-tuc" className="text-primary font-semibold">← Quay lại tin tức</Link>
       </div>
     );
   }
@@ -33,7 +33,7 @@ export default async function NewsDetailPage({ params }: { params: { slug: strin
     <>
       <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <Link href="/news" className="text-white/60 hover:text-white text-sm mb-4 inline-block">← Tất cả tin tức</Link>
+          <Link href="/tin-tuc" className="text-white/60 hover:text-white text-sm mb-4 inline-block">← Tất cả tin tức</Link>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{article.title}</h1>
           {article.publishedAt && (
             <p className="text-white/60 text-sm">{new Date(article.publishedAt).toLocaleDateString('vi-VN', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
@@ -56,7 +56,7 @@ export default async function NewsDetailPage({ params }: { params: { slug: strin
           <div className="mt-16 bg-primary rounded-2xl p-10 text-white text-center">
             <h2 className="text-2xl font-bold mb-3">Bạn quan tâm đến dịch vụ này?</h2>
             <p className="text-white/80 mb-6">Đặt lịch tư vấn miễn phí tại Số 10 Trần Điền</p>
-            <Link href="/contact" className="inline-flex bg-white text-primary px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all">
+            <Link href="/lien-he" className="inline-flex bg-white text-primary px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all">
               Đặt lịch ngay
             </Link>
           </div>

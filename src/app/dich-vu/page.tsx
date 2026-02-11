@@ -27,7 +27,7 @@ export default async function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((s) => (
-              <Link key={s.slug} href={`/services/${s.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <Link key={s.slug} href={`/dich-vu/${s.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
                 <div className="h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
                   <span className="text-6xl opacity-50">✨</span>
                 </div>
@@ -50,7 +50,7 @@ export default async function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Bạn Cần Tư Vấn?</h2>
           <p className="text-gray-600 text-lg mb-8">Liên hệ ngay để được bác sĩ tư vấn miễn phí tại Số 10 Trần Điền</p>
-          <Link href="/contact" className="inline-flex bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-1">
+          <Link href="/lien-he" className="inline-flex bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-1">
             Đặt lịch tư vấn
           </Link>
         </div>

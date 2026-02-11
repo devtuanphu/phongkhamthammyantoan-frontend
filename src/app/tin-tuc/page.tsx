@@ -27,7 +27,7 @@ export default async function NewsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((a) => (
-              <Link key={a.slug} href={`/news/${a.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+              <Link key={a.slug} href={`/tin-tuc/${a.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
                 <div className="h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
                   <span className="text-5xl opacity-30">📰</span>
                 </div>
